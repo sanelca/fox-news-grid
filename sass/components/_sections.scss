@@ -9,6 +9,72 @@ and open the template in the editor.
 */
 // Base
 
-p {
-  color: $primary-color;
+.header {
+    .backPart {
+        
+        position: absolute;
+        float: left;
+        width: 100%;
+        z-index: -1;
+        
+        .topTrack {
+            border-top: solid 3px red;
+            background-color: #003366;
+            height: 50px;
+        }
+        .bottomTrack {
+            background-color: #ffffff;
+            height: 50px;
+        }        
+    }
+    .centralPart {
+        display: grid;
+        justify-content: center; 
+        grid-template-columns: 100px minmax(250px, 1300px); 
+        .logotip {
+            div {
+                padding: 4px;
+                background-color: white;
+                margin-top: 10px;
+            }
+        }
+        .rightSide {
+            .topTrack {
+                display: grid;
+                justify-content: space-between;
+                grid-template-columns: minmax(450px, 1000px) 280px;
+                ul {
+                    list-style: none;
+                    margin: 0;
+                    padding: 0;
+                    height: 50px;
+                    float: left;
+                    padding-top: 3px;    
+                    margin-left: 15px;
+                    li {
+                        float: left;
+                        height: 50px;
+                        align-content: center;
+                        display: grid;
+                        a {
+                            transition: background .2s linear;
+                            border-radius: 3px;
+                            font-size: 14px;
+                            padding: 6px 10px;
+                            color: white;
+                            font-weight: 600;
+                            cursor: pointer;
+                        }
+                        a:hover {
+                            color: #edf6ff;
+                            background-color: #40668c;                            
+                        }
+                    }
+                }
+            }
+            .bottomTrack {
+                
+            }            
+        }
+    }
 }
