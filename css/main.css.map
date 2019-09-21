@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": "AAWA,CAAE,CACA,KAAK,CCHS,GAAG",
+"sources": ["../sass/components/_sections.scss","../sass/base/_variables.scss"],
+"names": [],
+"file": "main.css"
+}
