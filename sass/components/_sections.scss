@@ -52,6 +52,7 @@ and open the template in the editor.
                     padding-top: 3px;    
                     margin-left: 15px;
                     li {
+                        position: relative;
                         float: left;
                         height: 50px;
                         align-content: center;
@@ -71,9 +72,96 @@ and open the template in the editor.
                         }
                     }
                 }
+                .loginPart {
+                    display: grid;
+                    grid-template-columns: 1fr 2fr 2fr;
+                    grid-gap: 10px;
+                    justify-items: end;
+                    svg {
+                        margin-top: 12px;
+                    }
+                    .button {
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        margin-top: 14px;
+                        border-radius: 6px;
+                        font-size: 17px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        margin-bottom: 10px;
+                        text-align: center;
+                        span {
+                            color: white;
+                            
+                        }
+                    }
+                    .loginButton {
+                        background-color: #1b4e81;
+                    }
+                    .watchTV {
+                        background-color: #d20f26;
+                    }                    
+                }
             }
             .bottomTrack {
-                
+                display: grid;
+                grid-template-columns: auto auto;
+                .leftPart, .rightPart {
+                    a {
+                        color: #036;
+                        cursor: pointer;
+                        padding-top: 5px;
+                        padding-bottom: 5px;
+                        padding-left: 5px;
+                        padding-right: 5px;
+                        float: left;    
+                        font-weight: 600;
+                    }   
+                    a:hover {
+                        color: #5787b8;
+                    }
+                    display: grid;
+                    justify-content: end;
+                    grid-template-columns: auto auto auto;                    
+                    span {
+                        color: red;
+                        padding-left: 10px;
+                        padding-right: 10px;
+                        padding-top: 3px;
+                    }                    
+                   ul {
+                        list-style: none;
+                        margin: 0;
+                        padding: 0;
+                        float: left;
+                        font-size: 14px;
+                        li {
+                            float: left;
+                            position: relative;
+                        }
+                        li::before {
+                            content: "";
+                            display: block;
+                            position: absolute;
+                            background-color: #a7c6e5;
+                            top: 7px;
+                            left: -2px;
+                            height: 10px;
+                            width: 2px;                        
+                        }
+                    }                  
+                }
+                .leftPart {
+                    align-self: start;
+                    justify-content: start;
+                }
+                .rightPart {
+                    justify-content: end;
+                    align-self: end;
+
+                }
             }            
         }
     }
